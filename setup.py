@@ -1,14 +1,15 @@
 from setuptools import setup
 
+NAME = "sort_data"
+
 setup(
-    name="solution",
+    name=NAME,
     version="1.0.0",
-    py_modules=["edit_prepared_data", "sort_data"],
+    py_modules=[NAME],
     entry_points={
         "console_scripts": [
-            "edit_prepared_data=edit_prepared_data:main",
-            "sort_data=sort_data:main",
+            f"{NAME}=sort_data:main",
         ],
     },
-    install_requires=["tqdm"]
+    install_requires=['tqdm']
 )
