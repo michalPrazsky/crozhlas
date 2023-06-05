@@ -25,7 +25,7 @@ def edit_data(source_dir, output_dir):
                     json.dump(data, file, indent=4)
                     shutil.move(file_path,output_dir)
                     changed_files_count += 1
-            except JSONDecodeError as e:
+            except (JSONDecodeError, ValueError, OSError, Exception) as e:
                 error_message = f"Error: {file_path}\n{e}"
                 logging.error(error_message)
                 continue

@@ -1,8 +1,8 @@
-import pandas as pd
-import os
-import json
 import datetime
-import matplotlib.pyplot as plt
+import json
+import os
+
+import pandas as pd
 
 directory = "./target"
 
@@ -29,7 +29,6 @@ for root, dirs, files in os.walk(directory):
                 dataset.append(data)
 
 df = pd.DataFrame(dataset) 
-
 df.to_excel("output.xlsx", index=True)
 print(df)
 
