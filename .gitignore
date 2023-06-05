@@ -2,3 +2,6 @@
 .vscode/
 NEED_CHANGE/
 source/
+venv
+.DS_Store
+target/
