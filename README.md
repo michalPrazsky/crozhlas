@@ -1,6 +1,5 @@
 # Vypracované zadání 
 viz: https://github.com/czech-radio/assignment
-
 ## Instalace
 Pro instalaci je potřeba vytvořit virtuální prostředí a poté ho spustit
 ```bash
@@ -47,6 +46,8 @@ Bez instalace je možné skript využívat stejně pomocí + argumenty
 ```bash
 python sort_data.py 
 ```
+Funkcionalita programu byla testována primárně na macOS.
+
 ## Část zpracování dat
 V poslední řadě jsou připojeny soubory `p3.xlsx` a skript `process_data.py`. Skript slouží pro vytvoření datasetu, který je následně exportován do .xlsx souboru. V .xlsx jsou poté manuálně data upravena pomocí kontingenční tabulky a vyobrazena na požadovaných grafech.
 
